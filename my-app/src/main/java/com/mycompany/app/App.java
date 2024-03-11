@@ -33,18 +33,20 @@ class Animal extends Organismo {
 class Ambiente {
     private String clima;
     private String terreno;
-    private String recursos;
+    private int recursosDisponibles;
+    private List<Organismo> organismos;
+
+    public Ambiente(String clima, String terreno, int recursosDisponibles, List<Organismo> organismos) {
+        this.clima = clima;
+        this.terreno = terreno;
+        this.recursosDisponibles = recursosDisponibles;
+        this.organismos = organismos;
+    }
 
     // Constructor, getters y setters
 
     void simularPredacion(Animal animal, Planta planta) {
         animal.comer(planta);
-    }
-
-    void simularCompetencia(Animal animal1, Animal animal2) {
-        if (animal1.hambriento && animal2.hambriento) {
-            // Implementar la lógica de competencia por recursos
-        }
     }
 
     void simularPolinizacion(Planta planta) {
