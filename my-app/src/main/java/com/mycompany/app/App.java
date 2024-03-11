@@ -29,3 +29,8 @@ class Animal extends Organismo {
         }
     }
 }
+
+class Ambiente {
+    private String clima;
+    private String terreno;
+    private String recursos;
