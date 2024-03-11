@@ -5,3 +5,14 @@ abstract class Organismo {
     protected int salud;
     protected int edad;
     protected boolean estadoReproductivo;
+
+
+}
+
+class Planta extends Organismo {
+    // Atributos específicos de las plantas
+    boolean polinizado;
+
+    void polinizar() {
+        this.polinizado = true;
+    }
