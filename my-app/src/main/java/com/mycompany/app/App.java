@@ -16,3 +16,16 @@ class Planta extends Organismo {
     void polinizar() {
         this.polinizado = true;
     }
+}
+
+class Animal extends Organismo {
+    // Atributos específicos de los animales
+    boolean hambriento;
+
+    void comer(Planta planta) {
+        if (this.hambriento) {
+            planta.salud--;
+            this.hambriento = false;
+        }
+    }
+}
