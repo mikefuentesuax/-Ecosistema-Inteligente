@@ -34,3 +34,20 @@ class Ambiente {
     private String clima;
     private String terreno;
     private String recursos;
+
+    // Constructor, getters y setters
+
+    void simularPredacion(Animal animal, Planta planta) {
+        animal.comer(planta);
+    }
+
+    void simularCompetencia(Animal animal1, Animal animal2) {
+        if (animal1.hambriento && animal2.hambriento) {
+            // Implementar la lógica de competencia por recursos
+        }
+    }
+
+    void simularPolinizacion(Planta planta) {
+        planta.polinizar();
+    }
+}
